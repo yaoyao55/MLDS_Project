@@ -17,6 +17,7 @@ The dataset includes daily records of meal orders and served quantities for brea
 <img src="assets/Image/image-20241123234936986.png" alt="image-20241123234936986" style="zoom:60%;" />
    Graph 1 provides an overview of daily order and served trends of breakfast orders and the discrepancy over time.
 
+
 <img src="assets/Image/image-20241123234949929.png" alt="image-20241123234949929" style="zoom:60%;" />
    Graph 2 provides an overview of daily order and served trends of lunch orders and the discrepancy over time.
 
@@ -58,10 +59,10 @@ On the testing data, the model maintained reasonable accuracy, with predictions 
 
 #### Analysis
 
-Detailed analysis of breakfast predictions on the test set highlights the following:
-   Prediction Gap: The gap between predicted and actual served quantities is significantly smaller than the gap between orders and actual served quantities.
-   Overestimation Benefits: Slightly over-predicting served quantities ensures sufficient food is prepared while controlling waste.
-   Adjustments: During certain periods, predictions underestimated actual served quantities, particularly when reliable lag data was missing. A buffer of 25 meals was calculated as an optimal adjustment to cover nearly all scenarios without significantly increasing waste.
+Detailed analysis of breakfast and lunch predictions on the test set highlights the following:
+1. Prediction Gap: The gap between predicted and actual served quantities is significantly smaller than the gap between orders and actual served quantities.
+2. Overestimation Benefits: Slightly over-predicting served quantities ensures sufficient food is prepared while controlling waste.
+3. Adjustments: During certain periods, predictions underestimated actual served quantities, particularly when reliable lag data was missing. A buffer of 25 meals was calculated as an optimal adjustment to cover nearly all scenarios without significantly increasing waste.
 
 #### Conclusion
 
