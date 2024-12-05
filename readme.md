@@ -14,7 +14,7 @@ Given the relatively small dimensionality of the features, the Random Forest reg
 
 The dataset includes daily records of meal orders and served quantities for breakfast and lunch. Visualizations have been used to illustrate patterns and trends in the data. For example:
 
-<img src="[def]" alt="image-20241123234936986" style="zoom:60%;" />
+<img src="assets/Image/image-20241123234936986.png" alt="image-20241123234936986" style="zoom:60%;" />
    Graph 1 provides an overview of daily order and served trends of breakfast orders and the discrepancy over time.
 
 <img src="assets/Image/image-20241123234949929.png" alt="image-20241123234949929" style="zoom:60%;" />
