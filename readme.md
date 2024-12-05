@@ -17,7 +17,7 @@ The dataset includes daily records of meal orders and served quantities for brea
 <img src="[def]" alt="image-20241123234936986" style="zoom:60%;" />
    Graph 1 provides an overview of daily order and served trends of breakfast orders and the discrepancy over time.
 
-<img src="assets/image/image-20241123234949929.png" alt="image-20241123234949929" style="zoom:60%;" />
+<img src="assets/Image/image-20241123234949929.png" alt="image-20241123234949929" style="zoom:60%;" />
    Graph 2 provides an overview of daily order and served trends of lunch orders and the discrepancy over time.
 
 ##### Data Cleaning
@@ -31,7 +31,7 @@ Key features were selected based on domain knowledge and statistical analysis. I
    Lag features such as served and ordered quantities over the past seven days.
 To refine the feature set, Pearson correlation coefficients were calculated to identify the most relevant predictors. This approach ensured that only the most impactful variables were included in the model.
 
-<img src="assets/image/image-20241123235012864.png" alt="image-20241123235012864" style="zoom:55%;" />
+<img src="assets/Image/image-20241123235012864.png" alt="image-20241123235012864" style="zoom:55%;" />
 
 #### Results
 
@@ -39,9 +39,9 @@ Training Data Predictions
 
 The Random Forest model demonstrated strong predictive capabilities on the training data, where the predicted served quantities closely matched the actual values. The results showed a significant reduction in the gap between orders and served quantities, minimizing potential waste.
 
-<img src="assets/image/image-20241123235035724.png" alt="image-20241123235035724" style="zoom:50%;" />
+<img src="assets/Image/image-20241123235035724.png" alt="image-20241123235035724" style="zoom:50%;" />
 
-<img src="assets/image/image-20241123235135396.png" alt="image-20241123235135396" style="zoom:50%;" />
+<img src="assets/Image/image-20241123235135396.png" alt="image-20241123235135396" style="zoom:50%;" />
 
 Testing Data Predictions
 
@@ -50,11 +50,11 @@ On the testing data, the model maintained reasonable accuracy, with predictions 
 2. In most cases, the predictions slightly exceeded the actual served quantities. This is desirable as it avoids shortages while keeping waste within acceptable limits.
 3. A few instances showed predicted served quantities falling below actual values, particularly at the beginning of the school term, when reliable lag features were unavailable. Adjustments based on order quantities during such periods can mitigate this issue.
 
-<img src="assets/image/image-20241123235142965.png" alt="image-20241123235142965" style="zoom:50%;" />
+<img src="assets/Image/image-20241123235142965.png" alt="image-20241123235142965" style="zoom:50%;" />
 
-<img src="assets/image/image-20241123235147705.png" alt="image-20241123235147705" style="zoom:50%;" />
+<img src="assets/Image/image-20241123235147705.png" alt="image-20241123235147705" style="zoom:50%;" />
 
-<img src="assets/image/image-20241123235152808.png" alt="image-20241123235152808" style="zoom:50%;" />
+<img src="assets/Image/image-20241123235152808.png" alt="image-20241123235152808" style="zoom:50%;" />
 
 #### Analysis
 
