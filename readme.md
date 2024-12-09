@@ -28,15 +28,18 @@ Some dates in the dataset were missing records or contained null values due to s
 #### Feature Extraction
 
 Key features were selected based on domain knowledge and statistical analysis. Initial features included:
-   Calendar-based variables such as month, weekday, and holidays.
-   Lag features such as served and ordered quantities over the past seven days.
+
+Calendar-based variables such as month, weekday, and holidays.
+
+Lag features such as served and ordered quantities over the past seven days.
+
 To refine the feature set, Pearson correlation coefficients were calculated to identify the most relevant predictors. This approach ensured that only the most impactful variables were included in the model.
 
 <img src="assets/Image/image-20241123235012864.png" alt="image-20241123235012864" style="zoom:55%;" />
 
 #### Results
 
-Training Data Predictions
+##### Training Data Predictions
 
 The Random Forest model demonstrated strong predictive capabilities on the training data, where the predicted served quantities closely matched the actual values. The results showed a significant reduction in the gap between orders and served quantities, minimizing potential waste.
 
@@ -44,11 +47,11 @@ The Random Forest model demonstrated strong predictive capabilities on the train
 
 <img src="assets/Image/image-20241123235135396.png" alt="image-20241123235135396" style="zoom:50%;" />
 
-Testing Data Predictions
+##### Testing Data Predictions
 
-On the testing data, the model maintained reasonable accuracy, with predictions aligning well with actual served values. Analysis revealed:
+The performance on the testing data provides a more objective and accurate reflection of the model's performance. On the testing data, the model maintained reasonable accuracy, with predictions aligning well with actual served values. Analysis revealed:
 1. The predicted served quantities were consistently closer to actual served amounts compared to using raw order quantities.
-2. In most cases, the predictions slightly exceeded the actual served quantities. This is desirable as it avoids shortages while keeping waste within acceptable limits.
+2. In most cases, the predictions slightly exceeded the actual served quantities. This is desirable as it avoids shortages while keeping waste within acceptable limits to act as a buffer.
 3. A few instances showed predicted served quantities falling below actual values, particularly at the beginning of the school term, when reliable lag features were unavailable. Adjustments based on order quantities during such periods can mitigate this issue.
 
 <img src="assets/Image/image-20241123235142965.png" alt="image-20241123235142965" style="zoom:50%;" />
